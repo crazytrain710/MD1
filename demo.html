@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <p>Select Beatles album from the list</p>
+
+  <select id="mySelect" onchange="do_something()">
+<option value="Rubber Soul">Rubber Soul</option>
+    <option value="Revolver">Revolver</option>
+    <option value="With The Beatles">With The Beatles</option>
+    <option value="Beatles For Sale">Beatles For Sale</option>
+  </select>
+<script>
+  var selectedElement =document.getElementById("mySelect");
+ selectedElement.addEventListener("change" ,changeFunction);
+         function changeFunction() {
+            var selectValue = document.getElementById("mySelect").value;
+            alert(selectValue);
+         }
+</script>
+
+<body>
+
+</body>
+</html>
