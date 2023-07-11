@@ -5,10 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-    <h2 id="intro"></h2>
+<h1>A Web Page</h1>
+<div id="messageDiv"> </div>
+<button type="button" onclick="showMessage() ">Click</button>
+      <script>
+          function  showMessage() {
+              document.getElementById("messageDiv").innerHTML = "Xin chào"
+          }
+      </script>
 </body>
 </html>
-<script src="index.js">
-  var intro ="Hello World" ;
-  document.getElementById("intro").innerHTML = intro;
-</script>
